@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [pumpkin]" skipfailedinvocationcounts="true">
+  <test name="DCDonelistTest(failed)">
+    <classes>
+      <class name="testcase.DCDonelistCases">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="test_add_DC_CSR"/>
+        </methods>
+      </class> <!-- testcase.DCDonelistCases -->
+    </classes>
+  </test> <!-- DCDonelistTest(failed) -->
+</suite> <!-- Failed suite [pumpkin] -->

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="GBK"?>
+<project name="pumpkin" basedir="." default="transform">
+	<property name="testng.output.dir" value="${basedir}/test-output" />
+	<property name="lib.dir" value="${basedir}/lib" />
+	<property name="testng.file" value="testng.xml" />
+
+	<path id="classes">
+		<fileset dir="${lib.dir}" includes="*.jar" />
+		<fileset dir="${lib.dir}" includes="*.zip" />
+		<pathelement location="${basedir}/bin" />
+	</path>
+
+	<taskdef resource="testngtasks" classpath="${lib.dir}/testng.jar" />
+
+	<target name="clean">
+		<delete dir="${basedir}/bin" />
+	</target>
+
+	<target name="compile" depends="clean">
+		<mkdir dir="${basedir}/bin" />
+		<javac srcdir="${basedir}/src" destdir="${basedir}/bin" encoding="UTF-8" classpathref="classes" includeantruntime="off" debug="on" debuglevel="lines,vars,source" />
+	</target>
+
+	<target name="regression" depends="compile">
+		<testng outputdir="${testng.output.dir}" classpathref="classes" delegateCommandSystemProperties="true">
+			<xmlfileset dir="${basedir}" includes="${testng.file}" />
+		</testng>
+	</target>
+
+	<target name="transform" depends="regression">
+		<xslt in="${testng.output.dir}/testng-results.xml" style="${testng.output.dir}/testng-results.xsl" out="${testng.output.dir}/index_pumpkinUITest.html ">
+			<!-- you need to specify the directory here again -->
+			<param name="testNgXslt.outputDir" expression="${testng.output.dir}/" />
+			<classpath refid="classes" />
+		</xslt>
+	</target>
+<!--
+	<target name="run" depends="compile">
+		<java classname="testCases.test" classpath="${basedir}/bin" />
+	</target>
+-->
+
+</project>

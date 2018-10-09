@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="pumpkin" parallel="false" Configfailurepolicy="continue" skipfailedinvocationcounts="true">
+	<!-- 
+	<parameter name="userName" value="" />
+	<parameter name="password" value="8888888" />
+	 -->
+<!-- 
+  <test name="LoginTest">
+    <classes>
+      <class name="testcase.LoginCases">
+      	<methods>
+            <include name="test_X_login_success" description="区县用户登录" invocation-numbers=""></include>
+            <include name="test_S_login_success" description="所用户登录" invocation-numbers=""></include>
+         </methods>
+      </class> 
+    </classes>
+   </test> 
+  
+  <test name="PetitionRegisterTest">
+    <classes>
+    	<class name="testcase.PetitionRegisterCases">
+    		<methods>
+    			<include name="test_petReg_input_required_fiels_success"></include>
+    			<include name="test_petReg_input_all_fiels_success"></include>
+    			<include name="test_add_street_petReg_success"></include>
+    			<include name="test_petReg_upload_file_success"></include>
+    		</methods>
+    	</class>
+    </classes>
+  </test>
+
+ -->
+  <test name="PetRegTodolistTest">
+    <classes>
+    	<class name="testcase.PetRegTodolistCases">
+    		<methods>
+    			<include name="test_PetRegister_qx_operation"></include>
+    			<include name="test_PetRegister_qx_assign"></include>
+				<include name="test_PetRegister_jd_operation"></include>
+				<include name="test_PetRegister_assign_retract"></include>
+				<include name="test_PetRegister_assign_receive"></include>
+				<include name="test_PetRegister_assign_receive_operate"></include>
+    		</methods>
+    	</class>
+    </classes>
+  </test> 
+
+<!-- 
+   <test name="PetRegDonelistTest">
+    <classes>
+    	<class name="testcase.PetRegDonelistCases">
+    		<methods>
+    			<include name="test_add_CSR"></include>
+				<include name="test_add_DC_info"></include>
+    		</methods>
+    	</class>
+    </classes>
+  </test> 
+
+  <test name="DCTodolistCases">
+  	<classes>
+  		<class name="testcase.DCTodolistCases">
+  			<methods>
+  				<include name="test_DC_qx_operation"></include>
+  				<include name="test_DC_qx_assigin"></include>
+  				<include name="test_DC_assign_jd_receive_operate"></include>
+  			</methods>
+  		</class>
+  	</classes>
+  </test>
+  
+  <test name="DCDonelistTest">
+  	<classes>
+  		<class name="testcase.DCDonelistCases">
+  			<methods>
+  				<include name="test_add_DC_CSR"></include>
+  			</methods>
+  		</class>
+  	</classes>
+  </test>
+  
+ -->
+  
+</suite> <!-- Suite -->

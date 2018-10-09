@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="pumpkin" duration-ms="82488" started-at="2017-12-27T05:43:24Z" finished-at="2017-12-27T05:44:46Z">
+    <groups>
+    </groups>
+    <test name="DCDonelistTest" duration-ms="82488" started-at="2017-12-27T05:43:24Z" finished-at="2017-12-27T05:44:46Z">
+      <class name="testcase.DCDonelistCases">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testcase.DCDonelistCases@51133c06]" name="beforeMethod" is-config="true" duration-ms="66774" started-at="2017-12-27T13:43:24Z" finished-at="2017-12-27T13:44:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="test_add_DC_CSR()[pri:0, instance:testcase.DCDonelistCases@51133c06]" name="test_add_DC_CSR" duration-ms="15698" started-at="2017-12-27T13:44:30Z" finished-at="2017-12-27T13:44:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_add_DC_CSR -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testcase.DCDonelistCases@51133c06]" name="afterMethod" is-config="true" duration-ms="0" started-at="2017-12-27T13:44:46Z" finished-at="2017-12-27T13:44:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- testcase.DCDonelistCases -->
+    </test> <!-- DCDonelistTest -->
+  </suite> <!-- pumpkin -->
+</testng-results>

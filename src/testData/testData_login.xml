@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testdata>  
+    <loginsuccess>
+        <username>hbxf</username>  
+        <password>8888888</password>  
+    </loginsuccess>
+    <wrongpassword>
+        <username>hbxf</username>
+        <password>111</password>  
+    </wrongpassword>
+    <usernamenull>  
+        <username></username>  
+        <password>8888888</password>  
+    </usernamenull>
+    <passwordnull>  
+        <username>hbxf</username>  
+        <password></password>  
+    </passwordnull>
+    <allnull>  
+        <username></username>  
+        <password></password>  
+    </allnull>
+</testdata>  
